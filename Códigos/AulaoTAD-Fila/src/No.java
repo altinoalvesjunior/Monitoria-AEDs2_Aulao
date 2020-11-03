@@ -4,7 +4,8 @@ public class No {
     public int elemento;
 
     public No() {
-        this(0);
+        elemento = 0;
+        proximo = null;
     }
 
     public No(int entradaUsuario) {
