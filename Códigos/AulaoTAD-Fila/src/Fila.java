@@ -17,18 +17,19 @@ public class Fila {
         ultimo = ultimo.proximo;
     }
 
-    public int desenfileirar() throws Exception {
-        if (filaVazia()) {
-            throw new Exception("Não é possível remover, a fila está vazia!");
+    public int desenfileirar() {
+
+        if (filaVazia())
+            System.out.println("Não é possível remover, a fila está vazia!");
+
+        else {
+            No temporario = primeiro;
+            primeiro = primeiro.proximo;
+            temporario.proximo = null;
+            temporario = null;
         }
 
-        No temporario = primeiro;
-        primeiro = primeiro.proximo;
-        int resp = primeiro.elemento;
-        temporario.proximo = null;
-        temporario = null;
-
-        return resp;
+        return primeiro.elemento;
     }
 
     public void imprimir() {
