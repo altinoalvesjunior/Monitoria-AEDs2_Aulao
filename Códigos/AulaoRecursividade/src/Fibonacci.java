@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Fibonacci {
 
     public static void main(String[] args) {
-
+        //Comentario para testar commit
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite uma posição para encontrá-lo na sequência de Fibonacci: "); // termo para encontrar na sequência
