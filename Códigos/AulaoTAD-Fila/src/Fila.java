@@ -21,13 +21,17 @@ public class Fila {
 
         if (filaVazia())
             System.out.println("Não é possível remover, a fila está vazia!");
+        else
+            primeiro = primeiro.proximo;
 
-        else {
+        // ---- Segunda Forma ----
+        /*else {
             No temporario = primeiro;
             primeiro = primeiro.proximo;
             temporario.proximo = null;
             temporario = null;
-        }
+        }*/
+        // ---- Segunda Forma ----
 
         return primeiro.elemento;
     }
